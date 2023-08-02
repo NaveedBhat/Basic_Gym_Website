@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gym Website</title>
+</head>
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css?family=Baloo+Bhai&display=swap" rel="stylesheet">
+    <style>
+        body{
+            margin: 0px;
+            padding: 0px;
+            background: url("bg2.jpg");
+            color: aliceblue;
+            font-family: 'Baloo Bhai', cursive;
+        }
+        .left{
+            /* border: 2px solid rgb(171, 74, 14); */
+            display: inline-block;
+            position: absolute;
+            top: 20px;
+            left: 60px;
+            
+        }
+        
+        .mid{
+            /* border: 2px solid green; */
+            display: block;
+            width: 45%;
+            margin: 29px auto;
+        }
+        .right{
+            /* border: 2px solid rebeccapurple; */
+            display: inline-block;
+            position: absolute;
+            top: 20px;
+            right: 34px;
+        }
+        .navBar{
+           display: inline-block;
+           
+        }
+        .navBar li{
+           display: inline-block;
+           font-size: 25px;
+          
+         }
+        .navBar li a{
+            color: rgb(208, 180, 19);
+            text-decoration: none;
+            padding: 34px 15px;
+            
+        }
+        .navBar li a:hover, 
+        .navBar li a.active{
+            color: rgb(164, 20, 12);
+            text-decoration: underline;
+ 
+        }
+        .left img{
+            width: 80px;
+            height: 80px;
+        }
+        .left div{
+            text-align: center;
+            font-style: bold ;
+            line-height: 5px;
+            color: rgb(208, 180, 19);
+            
+        }
+        .btn{
+            margin: 0px 9px;
+            border-radius: 6px;
+            padding: 3px 14px;
+            background-color: rgb(216, 178, 25);
+            border: 2px solid gray;
+            font-size: 17px;
+            font-family: 'Baloo Bhai', cursive;
+            
+        }
+        .btn:hover{
+           background-color: rgb(164, 20, 12);
+        }
+        .container{
+            border: 2px solid rgb(211, 182, 16);
+            display: inline-block;
+            margin: 51px 80px;
+            padding: 55px ;
+            width: 30%;
+            border-radius: 28px;
+             
+        }
+        .form-group input{
+            text-align: center;
+            display: block;
+            width: 74%;
+            padding: 6px;
+            border: 2px solid rgb(89, 5, 5);
+            margin: 10px auto;
+            border-radius: 8px;
+            padding: 1px;
+            font-size: 20px;
+            font-family: 'Baloo Bhai', cursive;
+
+        }
+        .container h1{
+            text-align: center;
+            color: rgb(208, 180, 19);
+        }
+        .container .btn{
+            display: block;
+            width: 74%;
+            margin: 20px auto;
+            font-size: 20px;
+            font-family: 'Baloo Bhai', cursive;
+        }
+        .form-group select{
+            text-align: center;
+            display: block;
+            width: 74%;
+            padding: 6px;
+            border: 2px solid rgb(89, 5, 5);
+            margin: 10px auto;
+            border-radius: 8px;
+            padding: 1px;
+            font-size: 20px;
+            font-family: 'Baloo Bhai', cursive;
+        }
+    </style>
+<body>
+    <header class="header">
+        <!-- Left box for logo -->
+        <div class="left"> 
+            <img src="gymlogo.png" alt="Gym Logo">
+            <div>Kashmir Gym</div>
+        </div>
+
+        <!-- mid box for nevbar -->
+        <div class="mid">
+            <ul class="navBar">
+                <li><a href="#"  class="active">Home</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Fitness Calculator</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+
+        <!-- right box for buttons -->
+        <div class="right">
+            <button class="btn">Call us</button>
+            <button class="btn">Email us</button>
+        </div>
+    </header>
+
+    <div class="container">
+        <h1>Join the Best Gym of Kashmir</h1>
+        <form action="noaction.php">
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter Name">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter Age">
+            </div>
+            <div class="form-group">
+                 <select name="Gender" id="gender" >
+                    <option value="Please select One">Gender</option>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                    <option value="Other">Other</option>
+               </select>
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter Locality">
+            </div>
+            <div class="form-group">
+                <input type="email" name="" placeholder="Enter Email">
+            </div>
+            <div class="form-group">
+                <input type="number" name="" placeholder="Enter Phone Number">
+            </div>
+            <button class="btn">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
